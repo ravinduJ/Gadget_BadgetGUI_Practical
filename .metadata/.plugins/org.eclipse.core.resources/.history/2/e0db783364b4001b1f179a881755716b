@@ -1,0 +1,94 @@
+<%@page import="model.UserServlet"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration</title>
+
+
+		 <link href="myStyle.css" rel="stylesheet" />
+		<link rel="stylesheet" href="Views/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="Components/jquery-3.5.0.min.js"></script>
+		<script src="Components/usermanager.js"></script>
+</head>
+<body>
+
+<div class="container align-item-center"><h1>User Registration Admin View</h1></div>
+
+<div class="container">
+<fieldset>
+	<form id="USERMANAGE" name="USERMANAGE" >
+	
+	<div class="container">
+	
+	<div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Name">
+  </div>
+	
+	<div class="form-group">
+    <label for="username">Email address</label>
+    <input type="email" class="form-control" id="username" placeholder="username"'name="email">
+  </div>
+  
+   <div class="form-group">
+    <label for="type">User type</label>
+    <select class="form-control" id="type" name="type">
+      <option>Investor</option>
+      <option>Researcher</option>
+      <option>Buyer</option>
+    </select>
+  </div>
+  
+  
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="password" name="password">
+  </div>
+  
+  
+	<div>
+	
+	</div>
+	</div>
+	
+	<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary btn-lg btn-block"> 
+	<input type="hidden" id="hiduserIDSave" name="hiduserIDSave" value="">
+	
+	
+	</form>
+	
+	<div id="alertSuccess" class="alert alert-success"></div>
+	<div id="alertError" class="alert alert-danger"></div>
+	
+	</fieldset>
+	
+	
+	
+	
+		<div class="container" id="usersGrid">
+				<fieldset>
+					<legend><b>View User Details</b></legend>
+					<form method="post" action="Usermanager.jsp" class="table table-striped">
+						<%
+							UserServlet userservlet = new UserServlet();
+											out.print(userservlet.read_Post());
+						%>
+					</form>
+					<br>
+				</fieldset>
+			</div>
+			
+			<br>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+127.0.0.1 - - [07/May/2021:10:13:38 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [07/May/2021:10:13:48 +0530] "GET /GadgetBadgetPractical/Usermanager.jsp HTTP/1.1" 200 2244
+0:0:0:0:0:0:0:1 - - [07/May/2021:10:13:48 +0530] "GET /GadgetBadgetPractical/myStyle.css HTTP/1.1" 404 788
+0:0:0:0:0:0:0:1 - - [07/May/2021:10:13:48 +0530] "GET /GadgetBadgetPractical/Components/jquery-3.5.0.min.js HTTP/1.1" 200 89493
+0:0:0:0:0:0:0:1 - - [07/May/2021:10:13:48 +0530] "GET /GadgetBadgetPractical/Views/bootstrap.min.css HTTP/1.1" 200 159515
+0:0:0:0:0:0:0:1 - - [07/May/2021:10:13:48 +0530] "GET /GadgetBadgetPractical/Components/usermanager.js HTTP/1.1" 404 806
+127.0.0.1 - - [07/May/2021:10:19:42 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [07/May/2021:10:19:44 +0530] "GET /GadgetBadgetPractical/Usermanager.jsp HTTP/1.1" 200 2244
+0:0:0:0:0:0:0:1 - - [07/May/2021:10:19:44 +0530] "GET /GadgetBadgetPractical/myStyle.css HTTP/1.1" 404 788
+0:0:0:0:0:0:0:1 - - [07/May/2021:10:19:44 +0530] "GET /GadgetBadgetPractical/Components/usermanager.js HTTP/1.1" 404 806
+0:0:0:0:0:0:0:1 - - [07/May/2021:10:21:07 +0530] "GET /GadgetBadgetPractical/UserAPI HTTP/1.1" 200 33
+0:0:0:0:0:0:0:1 - - [07/May/2021:10:21:34 +0530] "GET /GadgetBadgetPractical/UsermanagerService HTTP/1.1" 500 4598
